@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info-1 {
+  flex-basis: 50%;
+}
+
+.img-1 {
+  flex-basis: 50%;
+}
+
+.img-bike {
+  width: 100%;
+}
+
+
+.img-banner-dsk {
+  display: none;
+}
+
+.img-banner-mob {
+  width: 100%;
+}
+
+h2 {
+  padding: 0px 30px 20px;
+  font-family: arial;
+  font-size: 30px;
+  color: #111;
+  line-height: 50px;
+}
+
+p {
+  padding: 0px 30px 30px;
+  font-family: arial;
+  font-size: 18px;
+  color: #111;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-banner-dsk {
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .img-banner-mob {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container-1 {
+    flex-direction: row;
+}
